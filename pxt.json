@@ -1,0 +1,19 @@
+{
+    "name": "nokia5110",
+    "version": "0.0.0",
+    "description": "A driver for the nokia5110 lcd display.",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "display.cpp",
+        "shims.d.ts",
+        "enums.d.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": false
+}
