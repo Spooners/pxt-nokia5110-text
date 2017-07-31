@@ -3,7 +3,7 @@ declare namespace display {
 
     /**
      * Sets the x position of the cursor.
-     * @ param x number between 0 and 83 (inclusive).
+     * @param x number between 0 and 83 (inclusive).
      */
     //% blockId="display_set_x_position" block="set x position to %x"
     //% x.min=0 x.max=83 shim=display::setXPosition
@@ -11,7 +11,7 @@ declare namespace display {
 
     /**
      * sets the y position of the cursor.
-     * @ param y number between 0 and 5 (inclusive).
+     * @param y number between 0 and 5 (inclusive).
      */
     //% blockId="display_set_y_position" block="set y position to %y"
     //% y.min=0 y.max=5 shim=display::setYPosition
@@ -19,8 +19,8 @@ declare namespace display {
 
     /**
      * Sets boths the x and y position of the cursor.
-     * @ param x number between 0 and 83 (inclusive).
-     * @ param y number between 0 and 5 (inclusive).
+     * @param x number between 0 and 83 (inclusive).
+     * @param y number between 0 and 5 (inclusive).
      */
     //% blockId="display_set_x_y_position" block="set x to %x| and y to %y"
     //% x.min=0 x.max=83
@@ -45,8 +45,8 @@ declare namespace display {
      * (but probably not in block-editor due to handling of strings),
      * continues on next line if the line is too long,
      * wont begin a character on one line, to finis on the next.
-     * @ param text The text to print.
-     * @ note If the text continues below the bottom of the screen, it will wrap around to the top.
+     * @param text The text to print.
+     * @note If the text continues below the bottom of the screen, it will wrap around to the top.
      */
     //% blockId="display_print" block="print %text" shim=display::print
     function print(text: string): void;
