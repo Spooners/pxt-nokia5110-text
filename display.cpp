@@ -142,6 +142,7 @@ namespace display {
                 continue;
             }
 
+            // Check that it is enough space left on curren row to print a full character
             if (xPosition > 79) {
                 if (yPosition == 5) {
                     yPosition = 0;
