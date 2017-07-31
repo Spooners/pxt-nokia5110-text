@@ -1,6 +1,17 @@
 # nokia5110
 
-A driver for the nokia5110 lcd display.
+A simple driver for showing text on a nokia 5110 LCD display.
+
+# Hardware
+A nokia 5110 display (<https://www.sparkfun.com/products/10168>). Connect the pins in the following way:
+- RST -> P10
+- CE -> P11
+- DC -> P12
+- DIN -> P15
+- CLK -> P13
+- LIGHT -> P16
+
+The SPI module also needs a pin for the MISO line (DIN is MOSI), for this use the default pin P14.
 
 ## License
 
@@ -10,4 +21,3 @@ MIT
 
 * for PXT/microbit
 (The metadata above is needed for package search.)
-
