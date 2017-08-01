@@ -7,7 +7,7 @@ declare namespace display {
      */
     //% blockId="display_set_x_position" block="set x position to %x"
     //% x.min=0 x.max=83 shim=display::setXPosition
-    function setXPosition(x: number): void;
+    function setXPosition(x: uint8): void;
 
     /**
      * sets the y position of the cursor.
@@ -15,7 +15,7 @@ declare namespace display {
      */
     //% blockId="display_set_y_position" block="set y position to %y"
     //% y.min=0 y.max=5 shim=display::setYPosition
-    function setYPosition(y: number): void;
+    function setYPosition(y: uint8): void;
 
     /**
      * Sets boths the x and y position of the cursor.
@@ -25,7 +25,7 @@ declare namespace display {
     //% blockId="display_set_x_y_position" block="set x to %x| and y to %y"
     //% x.min=0 x.max=83
     //% y.min=0 y.max=5 shim=display::setXYPosition
-    function setXYPosition(x: number, y: number): void;
+    function setXYPosition(x: uint8, y: uint8): void;
 
     /**
      * Clears the display.
@@ -38,7 +38,7 @@ declare namespace display {
      */
     //% blockId="display_set_backlight" block="set backlight"
     //% value.min=0 value.max=1 shim=display::setBacklight
-    function setBacklight(value: number): void;
+    function setBacklight(value: uint8): void;
 
     /**
      * Print the provided text. Supports newline in JavaScript 
@@ -50,6 +50,27 @@ declare namespace display {
      */
     //% blockId="display_print" block="print %text" shim=display::print
     function print(text: string): void;
+
+    /**
+     * Change the connected pins from the default values.
+     */
+    //% blockId="display_change_SPI_pins" block="set pins DIN %DIN| CLK %CLK| LIGHT %LIGHT| Unused pin for MISO %MISO"
+    //% advanced=true shim=display::changeSPIPins
+    function changeSPIPins(DIN: DigitalPinEnum, CLK: DigitalPinEnum, MISO: DigitalPinEnum): void;
+
+    /**
+     * Change the connected pins from the default values.
+     */
+    //% blockId="display_change_BUS_pins" block="set pins RST %RST| CE %CE| DC %DC"
+    //% advanced=true shim=display::changeBusPins
+    function changeBusPins(RST: DigitalPinEnum, CE: DigitalPinEnum, DC: DigitalPinEnum): void;
+
+    /**
+     * Change the connected pins from the default values.
+     */
+    //% blockId="display_change_LIGHT_pins" block="set pins LIGHT %LIGHT"
+    //% advanced=true shim=display::changeLightPin
+    function changeLightPin(LIGHT: DigitalPinEnum): void;
 }
 
 // Auto-generated. Do not edit. Really.

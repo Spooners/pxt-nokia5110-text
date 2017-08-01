@@ -4,7 +4,17 @@
     "description": "A driver for the nokia5110 lcd display.",
     "license": "MIT",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "radio": "*"
+    },
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "enabled": 0
+                }
+            }
+        }
     },
     "files": [
         "README.md",
