@@ -54,23 +54,16 @@ declare namespace display {
     /**
      * Change the connected pins from the default values.
      */
-    //% blockId="display_change_SPI_pins" block="set pins DIN %DIN| CLK %CLK| LIGHT %LIGHT| Unused pin for MISO %MISO"
-    //% advanced=true shim=display::changeSPIPins
-    function changeSPIPins(DIN: DigitalPinEnum, CLK: DigitalPinEnum, MISO: DigitalPinEnum): void;
-
-    /**
-     * Change the connected pins from the default values.
-     */
     //% blockId="display_change_BUS_pins" block="set pins RST %RST| CE %CE| DC %DC"
     //% advanced=true shim=display::changeBusPins
-    function changeBusPins(RST: DigitalPinEnum, CE: DigitalPinEnum, DC: DigitalPinEnum): void;
+    function changeBusPins(RST: DigitalPin, CE: DigitalPin, DC: DigitalPin): void;
 
     /**
      * Change the connected pins from the default values.
      */
     //% blockId="display_change_LIGHT_pins" block="set pins LIGHT %LIGHT"
     //% advanced=true shim=display::changeLightPin
-    function changeLightPin(LIGHT: DigitalPinEnum): void;
+    function changeLightPin(LIGHT: DigitalPin): void;
 }
 
 // Auto-generated. Do not edit. Really.
