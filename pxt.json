@@ -19,6 +19,7 @@
     "files": [
         "README.md",
         "display.cpp",
+        "display.ts",
         "shims.d.ts",
         "enums.d.ts",
         "_locales/no/nokia5110-strings.json",
