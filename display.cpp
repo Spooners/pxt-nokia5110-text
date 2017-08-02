@@ -16,12 +16,16 @@ namespace pins {
 
 MicroBitPin *getPin(int id);
 
-//% color=#ff471a icon="\uf26c"
-namespace display {
-    enum MessageType {
+
+enum MessageType {
         Data = 1,
         Command = 0
     };
+//% color=#ff471a icon="\uf26c"
+namespace display {
+
+    
+
     MicroBitDisplay *disp = new MicroBitDisplay;
 
     // Variables used to keep track of when to change line while printing.

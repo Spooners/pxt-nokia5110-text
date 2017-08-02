@@ -1,4 +1,8 @@
 // Auto-generated. Do not edit.
+
+
+
+    //% color=#ff471a icon="\uf26c"
 declare namespace display {
 
     /**
@@ -36,7 +40,7 @@ declare namespace display {
     /**
      * Turns the backlight on (1) or off (0)
      */
-    //% blockId="display_set_backlight" block="set backlight"
+    //% blockId="display_set_backlight" block="set backlight %value"
     //% value.min=0 value.max=1 shim=display::setBacklight
     function setBacklight(value: uint8): void;
 
