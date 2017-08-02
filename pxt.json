@@ -20,7 +20,9 @@
         "README.md",
         "display.cpp",
         "shims.d.ts",
-        "enums.d.ts"
+        "enums.d.ts",
+        "_locales/no/nokia5110-strings.json",
+        "_locales/no/nokia5110-jsdoc-strings.json"
     ],
     "testFiles": [
         "test.ts"
