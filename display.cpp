@@ -16,6 +16,7 @@ namespace pins {
 
 MicroBitPin *getPin(int id);
 
+//% color=#ff471a icon="\uf26c"
 namespace display {
     enum MessageType {
         Data = 1,
@@ -123,7 +124,7 @@ namespace display {
     /**
     * Turns the backlight on (1) or off (0)
     */
-    //% blockId="display_set_backlight" block="set backlight"
+    //% blockId="display_set_backlight" block="set backlight %value"
     //% value.min=0 value.max=1
     void setBacklight(uint8_t value) {
         Light->setDigitalValue((value + 1) % 2); // The baclight is active low, so transform 1->0 and vice versa
