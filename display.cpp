@@ -202,7 +202,7 @@ namespace display {
     #endif
 
     /**
-    * Change the connected pins from the default values.
+    * Change what pins that is used for RST, CE and DC.
     */
     //% blockId="display_change_BUS_pins" block="set pins RST %RST| CE %CE| DC %DC"
     //% advanced=true
@@ -215,9 +215,9 @@ namespace display {
     }
 
     /**
-    * Change the connected pins from the default values.
+    * Change what pin that is used for LIGHT.
     */
-    //% blockId="display_change_LIGHT_pins" block="set pins LIGHT %LIGHT"
+    //% blockId="display_change_LIGHT_pins" block="set pin LIGHT %LIGHT"
     //% advanced=true
     void changeLightPin(DigitalPin LIGHT) {
         Light = getPin((int)LIGHT);

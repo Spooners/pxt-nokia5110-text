@@ -1,0 +1,15 @@
+{
+    "display.setXPosition": "Setter x-posisjonen til pekeren.",
+    "display.setXPosition|param|x": "Tall mellom 0 og 83 (inklusive).",
+    "display.setYPosition": "Setter y-posisjonen til pekeren.",
+    "display.setYPosition|param|y": "Tall mellom 0 og 5 (inklusive).",
+    "display.setXYPosition": "Setter både x- og y-posisjonen til pekeren.",
+    "display.setXYPosition|param|x": "Tall mellom 0 og 83 (inklusive).",
+    "display.setXYPosition|param|y": "tall mellom 0 og 5 (inklusive).",
+    "display.clear": "Tømmer skjermen.",
+    "display.setBacklight": "Skrur bakgrunnslyset på (1) eller av (0).",
+    "display.print": "Printer den gitte teksten. Støtter linjeskift i JavaScript (men trolig ikke i blokk-editoren grunnet håndteringen av tekst), fortsetter på neste linje hvis teksten er for lang, begynner ikke på en bokstav hvis det ikke er nok plass på linjen. OBS Hvis teksten fortsetter under bunnen av skjermen, vil teksten skrives til toppen av skjermen",
+    "display.print|param|text": "Teksten som skal skrives",
+    "display.changeBusPins": "Endrer hvilke pinner som brukes til RST, CE og DC",
+    "display.changeLightPins": "endrer hvilke pinne som brukes til LIGHT"
+}

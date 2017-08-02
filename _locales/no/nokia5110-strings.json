@@ -1,0 +1,10 @@
+{
+    "display.setXPosition|block": "sett x-posisjonen til %x",
+    "display.setYPosition|block": "sett y-posisjonen til %y",
+    "display.setXYPosition|block": "sett x-posisjonen til %x| og y-posisjonen til %y",
+    "display.clear|block": "tøm skjermen",
+    "display.setBacklight|block": "sett bakgrunnslyset %value",
+    "display.print|block": "skriv %text",
+    "display.changeBusPin|block": "sett pinner RST %RST| CE %CE| DC %DC",
+    "display.changeLighPin|block": "sett pinne LIGHT %LIGHT"
+}
