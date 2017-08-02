@@ -7,7 +7,7 @@ namespace display {
      */
     //% blockId="display_set_x_position" block="set x position to %x"
     //% x.min=0 x.max=83 shim=display::setXPosition
-    export function setXPosition(x: uint8): void {
+    export function setXPosition(x: number): void {
         return
     }
 
@@ -17,7 +17,7 @@ namespace display {
      */
     //% blockId="display_set_y_position" block="set y position to %y"
     //% y.min=0 y.max=5 shim=display::setYPosition
-    export function setYPosition(y: uint8): void {
+    export function setYPosition(y: number): void {
         return
     }
 
@@ -29,7 +29,7 @@ namespace display {
     //% blockId="display_set_x_y_position" block="set x to %x| and y to %y"
     //% x.min=0 x.max=83
     //% y.min=0 y.max=5 shim=display::setXYPosition
-    export function setXYPosition(x: uint8, y: uint8): void {
+    export function setXYPosition(x: number, y: number): void {
         return
     }
 
@@ -46,7 +46,7 @@ namespace display {
      */
     //% blockId="display_set_backlight" block="set backlight %value"
     //% value.min=0 value.max=1 shim=display::setBacklight
-    export function setBacklight(value: uint8): void {
+    export function setBacklight(value: number): void {
         return
     }
 
