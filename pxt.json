@@ -1,6 +1,6 @@
 {
     "name": "nokia5110",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "A driver for the nokia5110 lcd display.",
     "license": "MIT",
     "dependencies": {
