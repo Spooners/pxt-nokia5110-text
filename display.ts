@@ -7,7 +7,7 @@ namespace display {
      */
     //% blockId="display_set_x_position" block="set x position to %x"
     //% x.min=0 x.max=83 shim=display::setXPosition
-    function setXPosition(x: uint8): void {
+    export function setXPosition(x: uint8): void {
         return
     }
 
@@ -17,7 +17,7 @@ namespace display {
      */
     //% blockId="display_set_y_position" block="set y position to %y"
     //% y.min=0 y.max=5 shim=display::setYPosition
-    function setYPosition(y: uint8): void {
+    export function setYPosition(y: uint8): void {
         return
     }
 
@@ -29,7 +29,7 @@ namespace display {
     //% blockId="display_set_x_y_position" block="set x to %x| and y to %y"
     //% x.min=0 x.max=83
     //% y.min=0 y.max=5 shim=display::setXYPosition
-    function setXYPosition(x: uint8, y: uint8): void {
+    export function setXYPosition(x: uint8, y: uint8): void {
         return
     }
 
@@ -37,7 +37,7 @@ namespace display {
      * Clears the display.
      */
     //% blockId="display_clear" block="clear the display" shim=display::clear
-    function clear(): void {
+    export function clear(): void {
         return
     }
 
@@ -46,7 +46,7 @@ namespace display {
      */
     //% blockId="display_set_backlight" block="set backlight %value"
     //% value.min=0 value.max=1 shim=display::setBacklight
-    function setBacklight(value: uint8): void {
+    export function setBacklight(value: uint8): void {
         return
     }
 
@@ -59,7 +59,7 @@ namespace display {
      * @note If the text continues below the bottom of the screen, it will wrap around to the top.
      */
     //% blockId="display_print" block="print %text" shim=display::print
-    function print(text: string): void {
+    export function print(text: string): void {
         return
     }
 
@@ -68,7 +68,7 @@ namespace display {
      */
     //% blockId="display_change_BUS_pins" block="set pins RST %RST| CE %CE| DC %DC"
     //% advanced=true shim=display::changeBusPins
-    function changeBusPins(RST: DigitalPin, CE: DigitalPin, DC: DigitalPin): void {
+    export function changeBusPins(RST: DigitalPin, CE: DigitalPin, DC: DigitalPin): void {
         return
     }
 
@@ -77,7 +77,7 @@ namespace display {
      */
     //% blockId="display_change_LIGHT_pins" block="set pin LIGHT %LIGHT"
     //% advanced=true shim=display::changeLightPin
-    function changeLightPin(LIGHT: DigitalPin): void {
+    export function changeLightPin(LIGHT: DigitalPin): void {
         return
     }
 }

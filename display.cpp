@@ -78,45 +78,25 @@ namespace display {
         Ce->setDigitalValue(1);
     }
 
-    /**
-    * Sets the x position of the cursor.
-    * @param x number between 0 and 83 (inclusive).
-    */
-    //% blockId="display_set_x_position" block="set x position to %x"
-    //% x.min=0 x.max=83
+    //%
     void setXPosition(uint8_t x) {
         write(Command, 0x80 | x);
         xPosition = x;
     }
 
-    /**
-    * sets the y position of the cursor.
-    * @param y number between 0 and 5 (inclusive).
-    */
-    //% blockId="display_set_y_position" block="set y position to %y"
-    //% y.min=0 y.max=5
+    //%
     void setYPosition(uint8_t y) {
         write(Command, 0x40 | y);
         yPosition = y;
     }
 
-    /**
-    * Sets boths the x and y position of the cursor.
-    * @param x number between 0 and 83 (inclusive).
-    * @param y number between 0 and 5 (inclusive).
-    */
-    //% blockId="display_set_x_y_position" block="set x to %x| and y to %y"
-    //% x.min=0 x.max=83
-    //% y.min=0 y.max=5
+    //%
     void setXYPosition(uint8_t x, uint8_t y) {
         setXPosition(x);
         setYPosition(y);
     }
 
-    /**
-    * Clears the display.
-    */
-    //% blockId="display_clear" block="clear the display"
+    //%
     void clear() {
         setXYPosition(0, 0);
         // Fill the screen with empty bytes (6*84=504)
@@ -125,25 +105,13 @@ namespace display {
         }  
     }
 
-    /**
-    * Turns the backlight on (1) or off (0)
-    */
-    //% blockId="display_set_backlight" block="set backlight %value"
-    //% value.min=0 value.max=1
+    //%
     void setBacklight(uint8_t value) {
         Light->setDigitalValue((value + 1) % 2); // The baclight is active low, so transform 1->0 and vice versa
     }
 
     // TODO?: refactor
-    /**
-    * Print the provided text. Supports newline in JavaScript 
-    * (but probably not in block-editor due to handling of strings),
-    * continues on next line if the line is too long,
-    * wont begin a character on one line, to finis on the next.
-    * @param text The text to print.
-    * @note If the text continues below the bottom of the screen, it will wrap around to the top.
-    */
-    //% blockId="display_print" block="print %text"
+    //%
     void print(StringData *text) {
         ManagedString s(text);
         for (int index = 0; index < s.length(); index++) {
@@ -206,11 +174,7 @@ namespace display {
     }
     #endif
 
-    /**
-    * Change what pins that is used for RST, CE and DC.
-    */
-    //% blockId="display_change_BUS_pins" block="set pins RST %RST| CE %CE| DC %DC"
-    //% advanced=true
+    //%
     void changeBusPins(DigitalPin RST, DigitalPin CE, DigitalPin DC) {
         initialized = false;
         Rst = getPin((int)RST);
@@ -219,11 +183,7 @@ namespace display {
 
     }
 
-    /**
-    * Change what pin that is used for LIGHT.
-    */
-    //% blockId="display_change_LIGHT_pins" block="set pin LIGHT %LIGHT"
-    //% advanced=true
+    //%
     void changeLightPin(DigitalPin LIGHT) {
         Light = getPin((int)LIGHT);
     }
