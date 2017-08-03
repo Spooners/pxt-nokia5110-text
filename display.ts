@@ -64,20 +64,13 @@ namespace display {
     }
 
     /**
-     * Change what pins that is used for RST, CE and DC.
+     * Change what pins that is used for RST, CE, DC and LIGHT.
      */
-    //% blockId="display_change_BUS_pins" block="set pins RST %RST| CE %CE| DC %DC"
-    //% advanced=true shim=display::changeBusPins
-    export function changeBusPins(RST: DigitalPin, CE: DigitalPin, DC: DigitalPin): void {
-        return
-    }
-
-    /**
-     * Change what pin that is used for LIGHT.
-     */
-    //% blockId="display_change_LIGHT_pins" block="set pin LIGHT %LIGHT"
-    //% advanced=true shim=display::changeLightPin
-    export function changeLightPin(LIGHT: DigitalPin): void {
+    //% blockId="display_change_BUS_pins" block="set pins RST %RST| CE %CE| DC %DC| LIGHT %LIGHT"
+    //% advanced=true 
+    export function changePins(RST: DigitalPin, CE: DigitalPin, DC: DigitalPin, LIGHT: DigitalPin): void {
+        changeBusPins(RST, CE, DC)
+        changeLightPin(LIGHT)
         return
     }
 }

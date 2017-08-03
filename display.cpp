@@ -174,7 +174,10 @@ namespace display {
     }
     #endif
 
-    //%
+    /**
+    *
+    */
+    //% weight=0 advanced=true
     void changeBusPins(DigitalPin RST, DigitalPin CE, DigitalPin DC) {
         initialized = false;
         Rst = getPin((int)RST);
@@ -183,7 +186,10 @@ namespace display {
 
     }
 
-    //%
+    /**
+    *
+    */
+    //% weight=0 advanced=true
     void changeLightPin(DigitalPin LIGHT) {
         Light = getPin((int)LIGHT);
     }
