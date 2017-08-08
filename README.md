@@ -1,4 +1,4 @@
-# nokia5110
+# nokia5110-text
 
 A simple driver for showing text on a nokia 5110 LCD display.
 

@@ -24,10 +24,6 @@ enum MessageType {
 //% color=#ff471a icon="\uf26c"
 namespace display {
 
-    
-
-    MicroBitDisplay *disp = new MicroBitDisplay;
-
     // Variables used to keep track of when to change line while printing.
     uint8_t xPosition = 0;
     uint8_t yPosition = 0;
@@ -100,7 +96,7 @@ namespace display {
     void clear() {
         setXYPosition(0, 0);
         // Fill the screen with empty bytes (6*84=504)
-        for (int i = 0; i < 504; i++) {
+        for (int i = 0; i < 506; i++) {
             write(Data, 0x00);
         }  
     }
