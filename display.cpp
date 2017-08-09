@@ -48,6 +48,7 @@ namespace display {
         pins::spiFrequency(1000000);
         if (!spiPinsChanged) {
             pins::spiPins((DigitalPin)MICROBIT_ID_IO_P15, (DigitalPin)MICROBIT_ID_IO_P14, (DigitalPin)MICROBIT_ID_IO_P13);
+            spiPinsChanged = false;
         }
         Ce->setDigitalValue(1);
         Rst->setDigitalValue(0);
