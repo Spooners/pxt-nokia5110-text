@@ -4,6 +4,6 @@
 //display.changeLightPin(DigitalPin.P8)
 display.changePins(DigitalPin.P3, DigitalPin.P4, DigitalPin.P5, DigitalPin.P8)
 display.print("Dette er en lang tekst som\nmaa printes over mange linjer.")
-display.setXYPosition(20, 5)
+display.setXYPosition(43, 4)
 display.print("Mer tekst")
 display.setBacklight(1)

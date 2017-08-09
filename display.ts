@@ -73,4 +73,14 @@ namespace display {
         changeLightPin(LIGHT)
         return
     }
+
+    //% shim=display::changeBusPins
+    function changeBusPins(RST: DigitalPin, CE: DigitalPin, DC: DigitalPin): void {
+        return
+    }
+
+    //% shim=display::changeLightPin
+    function changeLightPin(LIGHT: DigitalPin): void {
+        return
+    }
 }

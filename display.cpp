@@ -123,7 +123,7 @@ namespace display {
             }
 
             // Check that it is enough space left on curren row to print a full character
-            if (xPosition > 79) {
+            if (xPosition > 84-5) {
                 if (yPosition == 5) {
                     yPosition = 0;
                 } else {
@@ -137,7 +137,7 @@ namespace display {
             for (int offset = 0; offset < 5; offset++) {
                 write(Data, font[i + offset]);
                 // Update x and y position
-                if (xPosition == 79) {
+                if (xPosition == 83) {
                     if (yPosition == 5) {
                         yPosition = 0;
                     } else {
@@ -147,6 +147,8 @@ namespace display {
                 } else {
                     xPosition++;
                 }
+                //xPosition = (xPosition + 1) % 84;
+                //yPosition = (yPosition + 1) % 6;
             }
         }
     }
