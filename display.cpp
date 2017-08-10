@@ -77,7 +77,7 @@ namespace display {
 
     //%
     void setXPosition(uint8_t x) {
-        if (x >= 0 && x < 84) {
+        if (x < 84) {
             write(Command, 0x80 | x);
             xPosition = x;
         }
@@ -85,7 +85,7 @@ namespace display {
 
     //%
     void setYPosition(uint8_t y) {
-        if (y >= 0 && y < 6) {
+        if (y < 6) {
             write(Command, 0x40 | y);
             yPosition = y;
         }
