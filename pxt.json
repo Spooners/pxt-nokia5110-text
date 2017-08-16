@@ -22,8 +22,8 @@
         "display.ts",
         "shims.d.ts",
         "enums.d.ts",
-        "_locales/no/nokia5110-strings.json",
-        "_locales/no/nokia5110-jsdoc-strings.json"
+        "_locales/no/nokia5110-text-strings.json",
+        "_locales/no/nokia5110-text-jsdoc-strings.json"
     ],
     "testFiles": [
         "test.ts"
